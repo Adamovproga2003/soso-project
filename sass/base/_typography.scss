@@ -3,7 +3,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: url('../../fonts/Poppins/poppins-v20-latin-300.woff2') format('woff2');
+  src: url('/fonts/Poppins/poppins-v20-latin-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,8 +11,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/Poppins/poppins-v20-latin-regular.woff2')
-    format('woff2');
+  src: url('/fonts/Poppins/poppins-v20-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -20,7 +19,7 @@
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 700;
-  src: url('../../fonts/Monserrat\ Alternates/montserrat-alternates-v17-latin-700.woff2')
+  src: url('/fonts/Monserrat\ Alternates/montserrat-alternates-v17-latin-700.woff2')
     format('woff2');
 }
 
@@ -29,7 +28,7 @@
   font-family: 'GT Walsheim Pro';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/GT\ Walsheim\ Pro/GTWalsheimPro-Regular.woff2')
+  src: url('/fonts/GT\ Walsheim\ Pro/GTWalsheimPro-Regular.woff2')
     format('woff2');
 }
 
@@ -38,8 +37,7 @@
   font-family: 'GT Walsheim Pro';
   font-style: normal;
   font-weight: 300;
-  src: url('../../fonts/GT\ Walsheim\ Pro/GTWalsheimPro-Light.woff2')
-    format('woff2');
+  src: url('/fonts/Walsheim\ Pro/GTWalsheimPro-Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -47,8 +45,7 @@
   font-family: 'GT Walsheim Pro';
   font-style: normal;
   font-weight: 700;
-  src: url('../../fonts/GT\ Walsheim\ Pro/GTWalsheimPro-Bold.woff2')
-    format('woff2');
+  src: url('/fonts/GT\ Walsheim\ Pro/GTWalsheimPro-Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -56,7 +53,7 @@
   font-family: 'Value Serif';
   font-style: normal;
   font-weight: 700;
-  src: url('../../fonts/Value\ Serif/Value\ Serif\ Bold.woff2') format('woff2');
+  src: url('/fonts/Value\ Serif/Value\ Serif\ Bold.woff2') format('woff2');
 }
 
 @font-face {
@@ -64,7 +61,7 @@
   font-family: 'Value Serif Pro';
   font-style: normal;
   font-weight: 400;
-  src: url('../../fonts/Value\ Serif/Value\ Serif\ Pro\ Medium.woff2')
+  src: url('/fonts/Value\ Serif/Value\ Serif\ Pro\ Medium.woff2')
     format('woff2');
 }
 
@@ -73,5 +70,5 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  src: url('../../fonts/Inter/inter-v13-latin-500.woff2') format('woff2');
+  src: url('/fonts/Inter/inter-v13-latin-500.woff2') format('woff2');
 }
