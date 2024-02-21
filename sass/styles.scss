@@ -1,0 +1,27 @@
+/* Base styles */
+@import './base/reset';
+@import './base/typography';
+
+/* Component styles */
+@import './components/action-buttons';
+@import './components/brand-buttons';
+@import './components/buttons';
+@import './components/carousels';
+@import './components/cards';
+@import './components/menus';
+
+/* Layout styles */
+@import './layout/announcement-bar';
+@import './layout/benefits-section';
+@import './layout/container';
+@import './layout/gradient-container';
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/hero-section';
+@import './layout/offers-section';
+@import './layout/skin-care-section';
+
+/* Util styles */
+@import './utils/text-highlight';
+@import './utils/variables';
+@import './utils/visually-hidden';

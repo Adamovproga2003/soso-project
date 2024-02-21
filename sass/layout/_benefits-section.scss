@@ -1,0 +1,43 @@
+.benefits-section {
+  overflow: hidden;
+  &--indented {
+    padding-bottom: 120px;
+  }
+  &__title {
+    color: var(--primary-color-dark);
+    text-align: center;
+    font-family: 'Value Serif Pro';
+    font-size: 48px;
+    font-weight: 400;
+    &--indented {
+      margin-bottom: 77px;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 365px;
+    width: 100%;
+    padding: 24px 32px;
+    box-shadow: 5px 4px 100px 5px rgba(0, 0, 0, 0.05);
+  }
+  &__text {
+    flex-shrink: 0;
+    color: var(--primary-color-dark);
+    font-family: 'GT Walsheim Pro';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+    max-width: 253px;
+    width: 100%;
+  }
+  &__icon {
+    flex-shrink: 0;
+  }
+}

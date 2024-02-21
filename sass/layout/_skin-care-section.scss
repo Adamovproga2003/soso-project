@@ -1,0 +1,31 @@
+.skin-care-section {
+  &--indented {
+    padding: 120px 0 160px 0;
+  }
+  &__hashtag {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    &--centered {
+      text-align: center;
+    }
+    &--bottom-spacing {
+      margin-bottom: 12px;
+    }
+  }
+  &__text {
+    color: var(--primary-color-dark);
+    font-family: 'Value Serif Pro';
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    &--bottom-spacing {
+      margin-bottom: 48px;
+    }
+  }
+}

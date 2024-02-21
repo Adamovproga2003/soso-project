@@ -1,0 +1,38 @@
+.offers-section {
+  background-color: #f5f4d1;
+  &--top-extended {
+    padding-top: 48px;
+  }
+  &--bottom-extended {
+    padding-bottom: 60px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    gap: 18px;
+  }
+  &__icon {
+    flex-shrink: 0;
+  }
+  &__text {
+    color: var(--primary-color-dark);
+    font-family: 'Value Serif Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.24px;
+    margin-bottom: 6px;
+  }
+  &__description {
+    color: var(--primary-color-low-dark);
+    font-family: 'GT Walsheim Pro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+  }
+}
