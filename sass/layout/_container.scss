@@ -3,13 +3,18 @@
   width: 100%;
   padding: 0 24px;
   margin: 0 auto;
+  height: 100%;
   &--fluid {
     max-width: 1440px;
+  }
+  &--large {
+    max-width: 1980px;
   }
   &--without-spacing {
     padding: 0;
   }
   &--relative {
     position: relative;
+    z-index: 999;
   }
 }

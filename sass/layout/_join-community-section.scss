@@ -1,4 +1,6 @@
 .join-community-section {
+  position: relative;
+  z-index: 2;
   &__container {
     border-radius: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),

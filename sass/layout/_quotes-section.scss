@@ -1,0 +1,37 @@
+.quotes-section {
+  &--intended {
+    padding-top: 415px;
+    margin-top: -185px;
+    padding-bottom: 200px;
+  }
+  &__item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    &-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    &-says {
+      color: var(--primary-color-dark);
+      text-align: center;
+      font-family: 'GT Walsheim Pro';
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+  }
+  &__text {
+    color: var(--primary-color-low-dark);
+    text-align: center;
+    font-family: 'GT Walsheim Pro';
+    font-size: 28px;
+    font-weight: 500;
+    max-width: 874px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

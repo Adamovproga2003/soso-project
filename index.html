@@ -8,6 +8,13 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.min.css" />
+
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <section class="announcement-bar">
@@ -129,7 +136,7 @@
         </div>
       </div>
     </section>
-    <div class="gradient-container">
+    <div class="gradient-container-top">
       <section class="skin-care-section skin-care-section--indented">
         <div class="container">
           <p
@@ -176,78 +183,93 @@
             </div>
           </div>
           <div class="container container--relative">
-            <button
-              type="button"
-              class="carousel__controller carousel__controller-prev is-hidden"
-            >
-              <svg width="24" height="24">
-                <use xlink:href="./images/icons.svg#icon-arrow"></use>
-              </svg>
-            </button>
-            <ul class="carousel__list">
-              <li class="carousel__card card card-advertise">
-                <div class="card-advertise__container">
-                  <h5 class="card-advertise__title">
-                    Find the perfect fit for you
-                  </h5>
-                  <button class="card-advertise__button brand-button">
-                    Take the quiz
+            <div class="swiper-products">
+              <div class="swiper-wrapper carousel__list">
+                <div class="swiper-slide carousel__card card card-advertise">
+                  <div class="card-advertise__container">
+                    <h5 class="card-advertise__title">
+                      Find the perfect fit for you
+                    </h5>
+                    <button class="card-advertise__button brand-button">
+                      Take the quiz
+                    </button>
+                  </div>
+                  <img
+                    class="card-advertise__img"
+                    src="./images/advertisement-img.png"
+                    alt="Advertisement image"
+                  />
+                </div>
+                <div class="swiper-slide carousel__card card">
+                  <h5 class="card__title">Multivitamin 18+</h5>
+                  <p class="card__description">
+                    Personalized prescription skin care
+                  </p>
+                  <img
+                    class="card__img"
+                    src="./images/vitamin-img.png"
+                    alt="Vitamins"
+                  /><button class="card__purchase-button brand-button">
+                    Add to cart - $12
                   </button>
                 </div>
-                <img
-                  class="card-advertise__img"
-                  src="./images/advertisement-img.png"
-                  alt="Advertisement image"
-                />
-              </li>
-              <li class="carousel__card card">
-                <h5 class="card__title">Multivitamin 18+</h5>
-                <p class="card__description">
-                  Personalized prescription skin care
-                </p>
-                <img
-                  class="card__img"
-                  src="./images/vitamin-img.png"
-                  alt="Vitamins"
-                /><button class="card__purchase-button brand-button">
-                  Add to cart - $12
-                </button>
-              </li>
-              <li class="carousel__card card">
-                <h5 class="card__title">Postnatal Multivitamin</h5>
-                <p class="card__description">
-                  Personalized prescription skin care
-                </p>
-                <img
-                  class="card__img"
-                  src="./images/vitamin-img.png"
-                  alt="Vitamins"
-                /><button class="card__purchase-button brand-button">
-                  Add to cart - $12
-                </button>
-              </li>
-              <li class="carousel__card card">
-                <h5 class="card__title">Vita-min</h5>
-                <p class="card__description">
-                  Personalized prescription skin care
-                </p>
-                <img
-                  class="card__img"
-                  src="./images/vitamin-img.png"
-                  alt="Vitamins"
-                /><button class="card__purchase-button brand-button">
-                  Add to cart - $12
-                </button>
-              </li>
-            </ul>
-            <button
-              type="button"
-              class="carousel__controller carousel__controller-next"
-            >
-              <svg width="24" height="24">
-                <use xlink:href="./images/icons.svg#icon-arrow"></use>
-              </svg>
-            </button>
+                <div class="swiper-slide carousel__card card">
+                  <h5 class="card__title">Postnatal Multivitamin</h5>
+                  <p class="card__description">
+                    Personalized prescription skin care
+                  </p>
+                  <img
+                    class="card__img"
+                    src="./images/vitamin-img.png"
+                    alt="Vitamins"
+                  /><button class="card__purchase-button brand-button">
+                    Add to cart - $12
+                  </button>
+                </div>
+                <div class="swiper-slide carousel__card card">
+                  <h5 class="card__title">Multivitamin 18+</h5>
+                  <p class="card__description">
+                    Personalized prescription skin care
+                  </p>
+                  <img
+                    class="card__img"
+                    src="./images/vitamin-img.png"
+                    alt="Vitamins"
+                  /><button class="card__purchase-button brand-button">
+                    Add to cart - $12
+                  </button>
+                </div>
+                <div class="swiper-slide carousel__card card">
+                  <h5 class="card__title">Multivitamin 18+</h5>
+                  <p class="card__description">
+                    Personalized prescription skin care
+                  </p>
+                  <img
+                    class="card__img"
+                    src="./images/vitamin-img.png"
+                    alt="Vitamins"
+                  /><button class="card__purchase-button brand-button">
+                    Add to cart - $12
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <div
+                class="swiper-controller-prev carousel-products__controller carousel-products__controller-prev"
+              >
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </div>
+              <div
+                class="swiper-controller-next carousel-products__controller carousel-products__controller-next"
+              >
+                <svg width="24" height="24">
+                  <use xlink:href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -256,45 +278,47 @@
           <h2 class="benefits-section__title benefits-section__title--indented">
             Treat yourself, because you deserve it.
           </h2>
-          <ul class="benefits-section__list">
-            <li class="benefits-section__item card">
-              <svg width="37" height="37" class="benefits-section__icon">
-                <use xlink:href="./images/icons.svg#icon-lifesaver"></use>
-              </svg>
-              <p class="benefits-section__text">
-                <span class="text-highlight">Crafted with care</span> to support
-                your unique health needs.
-              </p>
-            </li>
-            <li class="benefits-section__item card">
-              <svg width="37" height="37" class="benefits-section__icon">
-                <use xlink:href="./images/icons.svg#icon-leaf"></use>
-              </svg>
-              <p class="benefits-section__text">
-                <span class="text-highlight">100% vegan</span> and
-                <span class="text-highlight">cruelty-free</span> supplements for
-                a healthier you
-              </p>
-            </li>
-            <li class="benefits-section__item card">
-              <svg width="37" height="37" class="benefits-section__icon">
-                <use xlink:href="./images/icons.svg#icon-genius"></use>
-              </svg>
-              <p class="benefits-section__text">
-                <span class="text-highlight">Science-backed</span> supplements
-                for optimal health and wellness.
-              </p>
-            </li>
-            <li class="benefits-section__item card">
-              <svg width="37" height="37" class="benefits-section__icon">
-                <use xlink:href="./images/icons.svg#icon-pil"></use>
-              </svg>
-              <p class="benefits-section__text">
-                <span class="text-highlight">Experience the difference</span>
-                with our next-level supplements
-              </p>
-            </li>
-          </ul>
+          <div class="swiper-benefits swiper-overflow">
+            <div class="swiper-wrapper benefits-section__list">
+              <div class="swiper-slide benefits-section__item card">
+                <svg width="37" height="37" class="benefits-section__icon">
+                  <use xlink:href="./images/icons.svg#icon-lifesaver"></use>
+                </svg>
+                <p class="benefits-section__text">
+                  <span class="text-highlight">Crafted with care</span> to
+                  support your unique health needs.
+                </p>
+              </div>
+              <div class="swiper-slide benefits-section__item card">
+                <svg width="37" height="37" class="benefits-section__icon">
+                  <use xlink:href="./images/icons.svg#icon-leaf"></use>
+                </svg>
+                <p class="benefits-section__text">
+                  <span class="text-highlight">100% vegan</span> and
+                  <span class="text-highlight">cruelty-free</span> supplements
+                  for a healthier you
+                </p>
+              </div>
+              <div class="swiper-slide benefits-section__item card">
+                <svg width="37" height="37" class="benefits-section__icon">
+                  <use xlink:href="./images/icons.svg#icon-genius"></use>
+                </svg>
+                <p class="benefits-section__text">
+                  <span class="text-highlight">Science-backed</span> supplements
+                  for optimal health and wellness.
+                </p>
+              </div>
+              <div class="swiper-slide benefits-section__item card">
+                <svg width="37" height="37" class="benefits-section__icon">
+                  <use xlink:href="./images/icons.svg#icon-pil"></use>
+                </svg>
+                <p class="benefits-section__text">
+                  <span class="text-highlight">Experience the difference</span>
+                  with our next-level supplements
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -480,5 +504,318 @@
         </div>
       </div>
     </section>
+    <div class="gradient-container-bottom">
+      <section class="quotes-section quotes-section--intended">
+        <div class="container">
+          <div class="swiper-quotes carousel">
+            <div class="swiper-wrapper quotes-section__quotes">
+              <div class="swiper-slide quotes-section__item">
+                <div class="quotes-section__item-author">
+                  <svg width="258" height="40">
+                    <use xlink:href="./images/icons.svg#icon-healthline"></use>
+                  </svg>
+                  <span class="quotes-section__item-says">says</span>
+                </div>
+                <svg width="55" height="45" class="quotes-section__item-icon">
+                  <use xlink:href="./images/icons.svg#icon-quotes-left"></use>
+                </svg>
+                <p class="quotes-section__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div>
+              <div class="swiper-slide quotes-section__item">
+                <div class="quotes-section__item-author">
+                  <svg width="258" height="40">
+                    <use xlink:href="./images/icons.svg#icon-healthline"></use>
+                  </svg>
+                  <span class="quotes-section__item-says">says</span>
+                </div>
+                <svg width="55" height="45" class="quotes-section__item-icon">
+                  <use xlink:href="./images/icons.svg#icon-quotes-left"></use>
+                </svg>
+                <p class="quotes-section__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div>
+              <div class="swiper-slide quotes-section__item">
+                <div class="quotes-section__item-author">
+                  <svg width="258" height="40">
+                    <use xlink:href="./images/icons.svg#icon-healthline"></use>
+                  </svg>
+                  <span class="quotes-section__item-says">says</span>
+                </div>
+                <svg width="55" height="45" class="quotes-section__item-icon">
+                  <use xlink:href="./images/icons.svg#icon-quotes-left"></use>
+                </svg>
+                <p class="quotes-section__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div>
+              <div class="swiper-slide quotes-section__item">
+                <div class="quotes-section__item-author">
+                  <svg width="258" height="40">
+                    <use xlink:href="./images/icons.svg#icon-healthline"></use>
+                  </svg>
+                  <span class="quotes-section__item-says">says</span>
+                </div>
+                <svg width="55" height="45" class="quotes-section__item-icon">
+                  <use xlink:href="./images/icons.svg#icon-quotes-left"></use>
+                </svg>
+                <p class="quotes-section__text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-quotes-pagination"></div>
+
+            <div
+              class="swiper-controller-prev carousel-quotes__controller carousel-quotes__controller-prev"
+            >
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+            <div
+              class="swiper-controller-next carousel-quotes__controller carousel-quotes__controller-next"
+            >
+              <svg width="24" height="24">
+                <use xlink:href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="articles-section articles-section--intended">
+        <div class="container">
+          <div class="articles-section__container">
+            <h5
+              class="articles-section__hashtag articles-section__hashtag--bottom-spacing"
+            >
+              #Evidence-based Information
+            </h5>
+            <h2
+              class="articles-section__title articles-section__title--bottom-spacing"
+            >
+              The Science of Wellness
+            </h2>
+            <ul class="articles-section__articles">
+              <li class="articles-section__item">
+                <article class="articles-section__article">
+                  <div class="articles-section__article-backdrop"></div>
+                  <img
+                    src="./images/articles-section-cortisol.jpg"
+                    alt="to manage cartisol levels"
+                    class="articles-section__article-img"
+                  />
+                  <div class="articles-section__article-content">
+                    <p class="articles-section__article-text">
+                      14 Supplements to Manage Your Cortisol Levels
+                    </p>
+                    <div class="articles-section__article-time">
+                      <svg width="18" height="18">
+                        <use xlink:href="./images/icons.svg#icon-clock"></use>
+                      </svg>
+                      <span class="articles-section__article-readtime"
+                        >5 mins read</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="articles-section__item">
+                <article class="articles-section__article">
+                  <div class="articles-section__article-backdrop"></div>
+                  <img
+                    src="./images/articles-section-vitamins.jpg"
+                    alt="the best vitamins"
+                    class="articles-section__article-img"
+                  />
+                  <div class="articles-section__article-content">
+                    <p class="articles-section__article-text">
+                      What are the Best Vitamins to Help Brain Fog? Experts
+                      Explain
+                    </p>
+                    <div class="articles-section__article-time">
+                      <svg width="18" height="18">
+                        <use xlink:href="./images/icons.svg#icon-clock"></use>
+                      </svg>
+                      <span class="articles-section__article-readtime"
+                        >5 mins read</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="articles-section__item">
+                <article class="articles-section__article">
+                  <div class="articles-section__article-backdrop"></div>
+                  <img
+                    src="./images/articles-section-superfoods.jpg"
+                    alt="guide to superfoods"
+                    class="articles-section__article-img"
+                  />
+                  <div class="articles-section__article-content">
+                    <p class="articles-section__article-text">
+                      The Ultimate Guide to Superfoods, unlock your nutrition
+                    </p>
+                    <div class="articles-section__article-time">
+                      <svg width="18" height="18">
+                        <use xlink:href="./images/icons.svg#icon-clock"></use>
+                      </svg>
+                      <span class="articles-section__article-readtime"
+                        >5 mins read</span
+                      >
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="faqs-section faqs-section--intended">
+      <div class="container">
+        <div class="faqs-section__container">
+          <h5
+            class="faqs-section__hashtag faqs-section__hashtag--bottom-spacing"
+          >
+            #All the help you need
+          </h5>
+          <h2 class="faqs-section__title faqs-section__title--bottom-spacing">
+            We know you are curious!
+          </h2>
+          <ul class="faqs-section__questions">
+            <li class="faqs-section__item faqs-section__item--active">
+              <div class="faqs-section__item-wrapper">
+                <h5 class="faqs-section__item-question">
+                  How do I choose the right supplement for my needs?
+                </h5>
+                <p class="faqs-section__item-answer">
+                  We offer a personalized quiz that takes into account your
+                  specific health goals, dietary preferences, and lifestyle
+                  factors. Based on your responses, we provide tailored
+                  recommendations to help you find the supplements that best
+                  suit your needs.
+                </p>
+              </div>
+              <svg width="32" height="32" class="faqs-section__item-plus">
+                <use xlink:href="./images/icons.svg#icon-plus"></use>
+              </svg>
+            </li>
+            <li class="faqs-section__item">
+              <div class="faqs-section__item-wrapper">
+                <h5 class="faqs-section__item-question">
+                  Can I take multiple supplements together?
+                </h5>
+                <p class="faqs-section__item-answer">
+                  We offer a personalized quiz that takes into account your
+                  specific health goals, dietary preferences, and lifestyle
+                  factors. Based on your responses, we provide tailored
+                  recommendations to help you find the supplements that best
+                  suit your needs.
+                </p>
+              </div>
+              <svg width="32" height="32" class="faqs-section__item-plus">
+                <use xlink:href="./images/icons.svg#icon-plus"></use>
+              </svg>
+            </li>
+            <li class="faqs-section__item">
+              <div class="faqs-section__item-wrapper">
+                <h5 class="faqs-section__item-question">
+                  Are your supplements suitable for vegetarians/vegans?
+                </h5>
+                <p class="faqs-section__item-answer">
+                  We offer a personalized quiz that takes into account your
+                  specific health goals, dietary preferences, and lifestyle
+                  factors. Based on your responses, we provide tailored
+                  recommendations to help you find the supplements that best
+                  suit your needs.
+                </p>
+              </div>
+              <svg width="32" height="32" class="faqs-section__item-plus">
+                <use xlink:href="./images/icons.svg#icon-plus"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="faqs-section__more">
+            <span class="faqs-section__more-text">Still have questions?</span>
+            <a href="#" class="faqs-section__more-link">Visit the FAQs page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="footer container container--large container--without-spacing"
+    >
+      <div class="footer__container">
+        <div class="footer__container-backdrop"></div>
+        <div class="container container--relative">
+          <div class="footer__wrapper">
+            <div class="footer__headlines">
+              <h5 class="footer__hashtag footer__hashtag--bottom-spacing">
+                Follow Us
+              </h5>
+              <h2 class="footer__title footer__title--bottom-spacing">
+                Meet Our Community
+              </h2>
+              <p class="footer__text">
+                Join the @Soso and share your voice with us.
+              </p>
+            </div>
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a href="#" class="footer__socials-link">
+                  <svg width="32" height="32">
+                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                  <div class="footer__socials-link-container">
+                    <h5 class="footer__socials-link-social">Instagram</h5>
+                    <span class="footer__socials-link-nickname">@SoSo</span>
+                  </div>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__socials-link">
+                  <svg width="32" height="32">
+                    <use xlink:href="./images/icons.svg#icon-tiktok"></use>
+                  </svg>
+                  <div class="footer__socials-link-container">
+                    <h5 class="footer__socials-link-social">Tiktok</h5>
+                    <span class="footer__socials-link-nickname">@SoSo</span>
+                  </div>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="#" class="footer__socials-link">
+                  <svg width="32" height="32">
+                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                  <div class="footer__socials-link-container">
+                    <h5 class="footer__socials-link-social">Twitter</h5>
+                    <span class="footer__socials-link-nickname">@brand</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <span class="footer__rights"
+              >© 2024 Brand, Inc. All rights reserved.
+            </span>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/footer-img.png"
+        alt="footer image"
+        class="footer__img"
+      />
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

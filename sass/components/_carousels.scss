@@ -1,8 +1,10 @@
 .carousel {
   overflow: hidden;
+  position: relative;
   &__container {
     display: flex;
     justify-content: center;
+    position: relative;
   }
   &__panel {
     display: flex;
@@ -51,24 +53,54 @@
     padding: 38px;
     max-width: 370px;
     width: 100%;
+    height: auto !important;
   }
-  &__controller {
-    position: absolute;
-    top: 50%;
-    z-index: 3;
-    padding: 13px;
-    background-color: #000;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    &-prev {
-      left: 0;
-      transform: translateY(-50%) rotate(180deg);
+  &-products,
+  &-quotes,
+  &-benefits {
+    &__pagination {
+      &-horizontal {
+        display: flex;
+        justify-content: center;
+      }
+      &-bullet {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid #000;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 8px;
+        &:last-child {
+          margin: 0;
+        }
+        &--active {
+          background-color: #000;
+        }
+      }
     }
-    &-next {
-      right: 0;
+    &__controller {
+      position: absolute;
+      top: 50%;
+      z-index: 3;
+      padding: 13px;
+      background-color: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-50%);
+      cursor: pointer;
+      &-disabled {
+        display: none;
+      }
+      &-prev {
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+      }
+      &-next {
+        right: 2px;
+      }
     }
   }
 }
