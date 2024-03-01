@@ -65,7 +65,6 @@
   }
   &__item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-block: 30px;
     border-bottom: 1px solid #dee5ed;
@@ -75,12 +74,13 @@
         transform: rotate(45deg);
       }
       .faqs-section__item-answer {
-        display: block;
-        height: auto;
+        margin-top: 12px;
       }
     }
     &-plus {
       flex-shrink: 0;
+      margin: auto 0;
+      transition: transform 0.3s;
     }
     &-question {
       color: var(--primary-color-dark);
@@ -91,7 +91,6 @@
       letter-spacing: 0.2px;
     }
     &-answer {
-      margin-top: 12px;
       color: var(--primary-color-low-dark);
       font-family: 'GT Walsheim Pro';
       font-size: 18px;
@@ -100,8 +99,9 @@
       letter-spacing: 0.5px;
       max-width: 940px;
       width: 100%;
-      height: 0;
-      display: none;
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.3s, margin-top 0.2s;
     }
   }
   &__more {

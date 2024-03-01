@@ -2,6 +2,8 @@
   overflow: visible !important;
 }
 
-.swiper:hover {
+.swiper-products:hover,
+.swiper-quotes:hover,
+.swiper-benefits:hover {
   cursor: pointer;
 }

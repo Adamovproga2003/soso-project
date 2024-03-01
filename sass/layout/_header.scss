@@ -34,5 +34,10 @@
     line-height: 1.5;
     letter-spacing: 0.5px;
     padding: 12px 28px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    &:hover {
+      color: #000;
+      background-color: var(--primary-color-brand);
+    }
   }
 }

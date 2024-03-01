@@ -42,6 +42,10 @@
   }
   &__button {
     padding: 12px 40px;
+    &:hover {
+      background-color: var(--primary-color-brand);
+      color: #000;
+    }
   }
   &__img {
     max-width: max-content;
