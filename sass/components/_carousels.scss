@@ -64,6 +64,9 @@
     max-width: 370px;
     width: 100%;
     height: auto !important;
+    &:last-child {
+      margin-right: 20px;
+    }
   }
   &-products,
   &-quotes,
@@ -101,19 +104,29 @@
       justify-content: center;
       transform: translateY(-50%);
       cursor: pointer;
-
+      transition: background-color 0.3s;
       &:hover {
         background-color: var(--primary-color-brand);
+        .arrow {
+          stroke: #000;
+        }
       }
+
       &-disabled {
         display: none;
       }
       &-prev {
         left: 0;
         transform: translateY(-50%) rotate(180deg);
+        &:active {
+          transform: translateY(-50%) rotate(180deg) scale(0.95);
+        }
       }
       &-next {
         right: 2px;
+        &:active {
+          transform: translateY(-50%) scale(0.95);
+        }
       }
     }
   }

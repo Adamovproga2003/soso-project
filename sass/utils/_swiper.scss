@@ -1,6 +1,10 @@
 .swiper-overflow {
   overflow: visible !important;
 }
+.swiper-products,
+.swiper-benefits {
+  padding: 0 80px 0 0;
+}
 
 .swiper-products:hover,
 .swiper-quotes:hover,

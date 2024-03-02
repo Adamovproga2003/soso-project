@@ -1,12 +1,11 @@
 .join-community-section {
-  position: relative;
-  z-index: 2;
   &__container {
     border-radius: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(./../images/join-community-img.png) lightgray 50% / cover no-repeat;
     height: 750px;
     padding: 80px 60px 60px 60px;
+    position: relative;
   }
   &__title {
     color: var(--primary-color-dark);

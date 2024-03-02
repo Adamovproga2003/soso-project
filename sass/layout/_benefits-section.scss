@@ -18,11 +18,12 @@
     gap: 24px;
   }
   &__item {
-    display: flex;
+    display: flex !important;
     align-items: center;
     gap: 32px;
     max-width: 365px;
     width: 100%;
+    height: auto !important;
     padding: 24px 32px;
     box-shadow: 5px 4px 100px 5px rgba(0, 0, 0, 0.05);
   }

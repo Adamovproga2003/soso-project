@@ -1,0 +1,94 @@
+.faqs-section {
+  &--intended {
+    padding-block: 120px;
+  }
+  &__hashtag {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    &--bottom-spacing {
+      margin-bottom: 12px;
+    }
+  }
+  &__title {
+    color: var(--primary-color-dark);
+    text-align: center;
+    font-family: 'Value Serif Pro';
+    font-size: 48px;
+    font-weight: 400;
+    &--bottom-spacing {
+      margin-bottom: 30px;
+    }
+  }
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+    border-bottom: 1px solid #dee5ed;
+    cursor: pointer;
+    &--active {
+      .faqs-section__item-plus {
+        transform: rotate(45deg);
+      }
+      .faqs-section__item-answer {
+        margin-top: 12px;
+      }
+    }
+    &-plus {
+      flex-shrink: 0;
+      margin: auto 0;
+      transition: transform 0.3s;
+    }
+    &-question {
+      color: var(--primary-color-dark);
+      font-family: 'GT Walsheim Pro';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+    }
+    &-answer {
+      color: var(--primary-color-low-dark);
+      font-family: 'GT Walsheim Pro';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.22;
+      letter-spacing: 0.5px;
+      max-width: 940px;
+      width: 100%;
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.3s, margin-top 0.2s;
+    }
+  }
+  &__more {
+    display: flex;
+    gap: 12px;
+    &-text {
+      color: var(--primary-color-dark);
+      font-family: 'GT Walsheim Pro';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+    }
+    &-link {
+      color: #000;
+      font-family: 'GT Walsheim Pro';
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.33;
+      letter-spacing: 0.5px;
+      text-decoration-line: underline;
+    }
+  }
+}
